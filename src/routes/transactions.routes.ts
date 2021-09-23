@@ -26,10 +26,10 @@ transactionsRouter.get('/', async (_, response) => {
 });
 
 transactionsRouter.post('/', async (request, response) => {
-  const { title, value, type } = request.body;
+  const { title, value, type, category_title } = request.body;
   const service = new CreateTransactionService();
   await service
-    .execute({ title, value, type })
+    .execute({ title, value, type, category_title })
     .then(res => response.json(res))
     .catch(err => new AppError(err, response.statusCode));
 });

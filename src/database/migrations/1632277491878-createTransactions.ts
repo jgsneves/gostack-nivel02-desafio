@@ -30,7 +30,7 @@ export class createTransactions1632277491878 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: 'category_id',
+            name: 'category_title',
             type: 'varchar',
             isNullable: false,
           },
