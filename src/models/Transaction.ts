@@ -15,7 +15,7 @@ class Transaction {
   value: number;
 
   @Column()
-  category_title: string;
+  category: string;
 
   @Column('timestamp with time zone')
   created_at: Date;
